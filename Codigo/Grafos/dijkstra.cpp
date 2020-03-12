@@ -12,7 +12,7 @@ vector<vector<int> > g(MAX);
 vector<vector<int> > w(MAX); // peso das arestas
 int d[MAX];
 
-void dijsktra(int a) {
+void dijkstra(int a) {
 	for (int i = 0; i < n; i++) d[i] = INF;
 	d[a] = 0;
 	priority_queue<pair<int, int> > Q;
